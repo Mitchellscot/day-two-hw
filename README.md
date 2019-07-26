@@ -1,5 +1,13 @@
 # Breakfast Object Objections
 
+## Objectives
+
+- Practice Read and Write skills
+- Solidify JavaScript knowledge
+  - functions
+  - objects
+- Translate business needs to code
+
 You are responsible for making breakfast for a group of 4 picky eaters. If you can't feed them, you will have to go out to eat. Ideally, you want to eat at home (it's less expensive), but you'd rather go out to eat than listen to them whine.
 
 Here are the demands from the picky eaters:
