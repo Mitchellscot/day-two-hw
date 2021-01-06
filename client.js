@@ -17,10 +17,14 @@ function breakfastChecker(contents, people) {
   const eggsNeeded = people*2;
   const pancakeBagsNeeded = people*.3;
   const chocolateNeeded = people*45;
-  let answer = '';
-  (contents.baconStrips >= baconNeeded && contents.eggs >= eggsNeeded) ? answer = 'Yes' : answer = 'No';
-  (contents.pancakeMixBags >= pancakeBagsNeeded && contents.chocolateChips >= chocolateNeeded) ? answer = 'Yes' : answer = 'No';
-  return answer;
+  if ((contents.baconStrips >= baconNeeded && contents.eggs >= eggsNeeded) ||
+  (contents.pancakeMixBags >= pancakeBagsNeeded && contents.chocolateChips >= chocolateNeeded)) {
+    return 'Yes'
+  }
+  else {
+    return 'No';
+  } 
+  
 }
 // Your function should return 'yes' or 'no'
 console.log('Does the refrigerator have enough food for breakfast?', breakfastChecker(refrigeratorContents, 4));
